@@ -45,5 +45,9 @@ public class Rooms {
     public void setDirty(boolean dirty) {
         isDirty = dirty;
     }
-//    public boolean isAvailable(String room) {}
+    //Methode to check if the room is available
+    public boolean isAvailable() {
+        //A room is available if it is not occupied and not dirty
+        return !isOccupied && !isDirty;
+    }
 }
